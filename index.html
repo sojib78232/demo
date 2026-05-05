@@ -1,49 +1,45 @@
-```html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- REDIRECT LOGIC -->
+    <!-- INSTANT REDIRECT -->
     <script>
-        /* EDIT THE LINK BELOW: Change this to your actual YouTube video or target link */
+        // EDIT BELOW: Change to your target link
         window.location.replace("https://www.google.com");
     </script>
 
-    <!-- BROWSER TAB TITLE -->
-    <title>Redirecting...</title>
+    <title>Latest Video Published</title>
 
-    <!-- SOCIAL MEDIA PREVIEW (Open Graph Tags) -->
-    <!-- This controls the Facebook/WhatsApp preview -->
-    
-    <!-- Your requested Title -->
-    <meta property="og:title" content="latest video published">
-    
-    <!-- Short description for the preview -->
-    <meta property="og:description" content="Click to watch the latest update.">
-    
-    <!-- Your requested Site Name (appears above/below the title) -->
-    <meta property="og:site_name" content="www.youtube.com">
-    
-    <!-- Your Image: Converted to a Direct Raw Link so Facebook can read it -->
-    <meta property="og:image" content="https://raw.githubusercontent.com/sojib78232/demo/main/IMG_20260430_030841_281.jpg">
-    
+    <!-- FACEBOOK / OPEN GRAPH TAGS (ESSENTIAL) -->
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sojib78232.github.io/demo/"> <!-- Change this to your EXACT live URL -->
+    <meta property="og:title" content="latest video published">
+    <meta property="og:description" content="Watch the latest update now on YouTube.">
+    
+    <!-- This creates the 'www.youtube.com' text above the title -->
+    <meta property="og:site_name" content="www.youtube.com">
 
-    <!-- Styling for the loading screen -->
+    <!-- IMAGE TAGS: Facebook requires specific dimensions sometimes -->
+    <meta property="og:image" content="https://raw.githubusercontent.com/sojib78232/demo/main/IMG_20260430_030841_281.jpg">
+    <meta property="og:image:secure_url" content="https://raw.githubusercontent.com/sojib78232/demo/main/IMG_20260430_030841_281.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- TWITTER PREVIEW (Optional but good) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="latest video published">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/sojib78232/demo/main/IMG_20260430_030841_281.jpg">
+
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-white flex items-center justify-center min-h-screen">
-
     <div class="text-center">
-        <!-- Modern loading spinner -->
-        <div class="animate-spin rounded-full h-10 w-10 border-t-2 border-b-2 border-red-600 mx-auto mb-4"></div>
-        <h1 class="text-lg font-semibold text-gray-700">Redirecting to YouTube...</h1>
-        <p class="text-gray-400 text-sm">Please wait a moment.</p>
+        <div class="animate-spin rounded-full h-12 w-12 border-t-4 border-red-600 mx-auto mb-4"></div>
+        <h1 class="text-xl font-bold text-gray-800">Redirecting...</h1>
     </div>
-
 </body>
 </html>
-
-```
