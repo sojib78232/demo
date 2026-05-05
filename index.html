@@ -1,0 +1,49 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- REDIRECT LOGIC -->
+    <script>
+        /* EDIT THE LINK BELOW: Change this to your actual YouTube video or target link */
+        window.location.replace("https://www.google.com");
+    </script>
+
+    <!-- BROWSER TAB TITLE -->
+    <title>Redirecting...</title>
+
+    <!-- SOCIAL MEDIA PREVIEW (Open Graph Tags) -->
+    <!-- This controls the Facebook/WhatsApp preview -->
+    
+    <!-- Your requested Title -->
+    <meta property="og:title" content="latest video published">
+    
+    <!-- Short description for the preview -->
+    <meta property="og:description" content="Click to watch the latest update.">
+    
+    <!-- Your requested Site Name (appears above/below the title) -->
+    <meta property="og:site_name" content="www.youtube.com">
+    
+    <!-- Your Image: Converted to a Direct Raw Link so Facebook can read it -->
+    <meta property="og:image" content="https://raw.githubusercontent.com/sojib78232/demo/main/IMG_20260430_030841_281.jpg">
+    
+    <meta property="og:type" content="website">
+
+    <!-- Styling for the loading screen -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white flex items-center justify-center min-h-screen">
+
+    <div class="text-center">
+        <!-- Modern loading spinner -->
+        <div class="animate-spin rounded-full h-10 w-10 border-t-2 border-b-2 border-red-600 mx-auto mb-4"></div>
+        <h1 class="text-lg font-semibold text-gray-700">Redirecting to YouTube...</h1>
+        <p class="text-gray-400 text-sm">Please wait a moment.</p>
+    </div>
+
+</body>
+</html>
+
+```
